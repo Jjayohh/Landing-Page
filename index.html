@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Copse&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="side">
-            <img src="/pictures/sidephoto.jpg">
+      <div class="side">
+        <div class="logo">
+          <img src="/pictures/logo.png" height="120" alt="logo" class="game" />
+          <h1>Mountains n Stuff</h1>
         </div>
-        <div class="form">
-            <div class="header">
-
+        <p>credit: @joelswick</p>
+      </div>
+      <div class="right">
+        <div class="header">
+          <p>
+            This is not a real online service! Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Necessitatibus, commodi!
+          </p>
+          <p>Sign up <i>now</i> to get started.</p>
+          <div class="secHeader">
+            <p>You <i>know</i> you want to.</p>
+          </div>
+        </div>
+        <form action="#" id="form" method="GET">
+          <div class="form">
+            <p class="form-title">Sign Up Now!</p>
+            <div class="input">
+              <label for="first">First Name </label>
+              <input type="text" id="first" name="first" />
             </div>
             <div class="input">
-
+              <label for="last">Last Name </label>
+              <input type="text" id="last" name="last" />
             </div>
-            <div class="submit">
-
+            <div class="input">
+              <label for="email">Email </label>
+              <input type="email" id="email" name="email" />
             </div>
-        </div>
+            <div class="input">
+              <label for="phone_number">Phone Number </label>
+              <input type="tel" id="phoneNumber" name="phone_number" />
+            </div>
+            <div class="input">
+              <label for="password">Password </label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="input">
+              <label for="confirm_password">Confirm Password </label>
+              <input type="password" name="password" id="confirmPassword" />
+            </div>
+          </div>
+          <div class="submission">
+            <div id="error"></div>
+            <button class="submit-button" type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
-<script href="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>

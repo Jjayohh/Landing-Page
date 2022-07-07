@@ -1,32 +1,166 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Copse', serif;
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkslategrey;
-}
-
-img {
-    width: 30vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Copse", serif;
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    color: black;
-    box-shadow: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main,
+.logo {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .side {
+  background-image: url(./pictures/sidephoto.jpg);
+  background-position: center;
+  background-size: auto 200%;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
 
+.side > p {
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.8rem;
+  left: 4px;
+  color: white;
+}
+
+.logo {
+  height: auto;
+  top: 10vh;
+  background-color: rgba(231, 231, 231, 0.5);
+  justify-content: center;
+  position: relative;
+  gap: 1vw;
+  padding: 15px 0;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  justify-content: center;
+}
+
+.right {
+  width: 60vw;
+  background-color: rgb(60, 63, 77);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.header {
+  color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  padding-left: 5%;
+}
+
+.secHeader {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.form {
+  background-color: rgb(84, 89, 104);
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+  box-shadow: 0 10px 20px -2px rgb(19, 19, 19);
+}
+
+.input {
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Copse", serif;
+  opacity: 70%;
+  padding: 8px;
+  padding-left: 5%;
+}
+
+.form-title {
+  color: white;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-left: 5%;
+}
+
+input {
+  background-color: rgb(110, 121, 145);
+  border: 2px solid rgb(57, 57, 65);
+  color: white;
+}
+
+input:active,
+input:focus {
+  border: 2px solid rgb(47, 168, 248);
+  outline: none;
+}
+
+#error {
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  position: absolute;
+}
+
+.submission {
+  color: white;
+}
+
+.submit-button {
+  background-color: rgb(66, 65, 107);
+  color: white;
+  margin-left: 5%;
+  margin-top: 8%;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.submission > p {
+  padding-left: 5%;
+  padding-top: 2%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  border: 1px solid rgb(122, 202, 255);
+}
+
+link:hover {
+  color: white;
+}
+
+a {
+  color: rgb(127, 225, 255);
+}
+
+a:hover {
+  color: white;
 }
