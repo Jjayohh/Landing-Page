@@ -1,0 +1,32 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Copse', serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategrey;
+}
+
+img {
+    width: 30vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: black;
+    box-shadow: 2;
+}
+
+.side {
+
+}
